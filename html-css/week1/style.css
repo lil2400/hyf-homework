@@ -1,0 +1,54 @@
+.e-mail:before {
+            content: attr(data-website) "\0040" attr(data-user);
+            unicode-bidi: bidi-override;
+            direction: rtl;
+ }
+img {
+	border-radius: 50%;
+	width: 100%;
+	height: auto;
+	-webkit-filter: grayscale(100%);
+	/* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	background: #E5E5E5;
+}
+
+.aboutme {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -70%);
+}
+
+ul {
+	font-weight: bold;
+}
+
+h1 {
+	text-align: center;
+}
+
+hr {
+	color: #f00;
+	background: #f00;
+	width: 75%;
+	height: 5px;
+}
+
+.col-container {
+	display: flex;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.col {
+	text-align: center;
+	flex: 1;
+	padding: 16px;
+}
