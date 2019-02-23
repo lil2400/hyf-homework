@@ -154,9 +154,10 @@ input:focus:invalid {
   
   }
   .intrested label,input{
-	  
 	width: 200px;
 	margin: 2px;
+	text-align: right;
+
   }
   
   .img-chk{
