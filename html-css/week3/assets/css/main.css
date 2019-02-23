@@ -130,11 +130,12 @@ input:focus:invalid {
 	display: flex;
 	flex-flow: column wrap;
 }
-.intrested > label,
-input {
-	width: 200px;
+.intrested label,
+.intrested input label {
+    width: 200px;
 	margin: 2px;
 	text-align: right;
+
 }
 .img-chk {
 	margin: 20px;
