@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>SignUp - 2/4</title>
+      <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="./assets/css/main.css">
+   </head>
+   <body>
+      <header class="page__header">
+         <img class="company_logo" src="./assets/img/logo.jpg" alt="company logo">
+         <ul class="menu">
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+         </ul>
+      </header>
+      <main class="page__main">
+         <h1>Sign up to simple.com</h1>
+         <h1>Step 2/4 - tell us who you are?</h1>
+         <p>Progress:</p>
+         <div class="w3-light-grey w3-xlarge">
+            <div class="w3-container w3-green" style="width:50%">50%</div>
+         </div>
+         <p>We will probably need to stay in touch somehow. Let's know how we can reach you!</p>
+         <div class="signup__form">
+            <form action="#">
+               <label class="vertical" for="email">E-mail*:</label>
+               <input
+                  type="email"
+                  placeholder="Your e-mail address"
+                  id="email"
+                  name="email" required>
+               <label for="phone">Phone:</label>
+               <input
+                  type="tel"
+                  placeholder="Your phone number"
+                  id="phone"	
+                  name="phone">
+               <label class="vertical" for="password">Password*:</label>
+               <input
+                  type="password"
+                  placeholder="Minimum 10 characters"
+                  minlength="10"
+                  id="password"
+                  name="password" required>
+               <div>
+                  <label class="vertical" for="re-password">Re-enter Password*:</label>
+                  <input
+                     type="password"
+                     placeholder="Minimum 10 characters"
+                     minlength="10"
+                     id="re-password"
+                     name="re-password" required>
+               </div>
+               <p>I want to sign up for newsletter</p>
+               <div id="news" class="get_news">
+                  <label for="w_news">Weekly news</label>
+                  <input type="radio" name="w_news" value="yes">
+                  <label for="chkb">Monthly news</label>
+                  <input id="chkb" type="checkbox" name="chkb">
+                  <label  for="chkb">Don't send me news</label>
+                  <input id="chkb" type="checkbox" name="chkb">
+               </div>
+               <div class="btn" style="margin-bottom:50px;">
+                  <a href="form3.htm#pg3" target="_top" class="next_btn">Next</a>
+               </div>
+            </form>
+         </div>
+      </main>
+   </body>
+   </body>
+</html>

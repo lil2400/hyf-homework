@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>SignUp - 4/4</title>
+      <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="./assets/css/main.css">
+      <style>
+         form {
+         width: auto;
+         display: table-caption;
+         }    
+         #cvv_month, #cvv_year, #cvv_ccv{
+         width: 50px;
+         }
+         .btn{
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         margin-bottom: 0;
+         }
+         #expire{
+         width: 500px;
+         }
+      </style>
+   </head>
+   <body>
+      <header class="page__header">
+         <img class="company_logo" src="./assets/img/logo.jpg" alt="company logo">
+         <ul class="menu">
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+         </ul>
+      </header>
+      <main id="pg4" class="page__main">
+         <h1>Sign up to simple.com</h1>
+         <h1>Step 4/4 - Payment</h1>
+         <p>Progress:</p>
+         <div class="w3-light-grey w3-xlarge">
+            <div class="w3-container w3-green" style="width:100%">100%</div>
+         </div>
+         <p>Please fill your payment data</p>
+         <div class="signup__form">
+            <form action="#">
+               <label class="vertical" for="cvv_name">Name on card*</label>
+               <input
+                  type="text"
+                  placeholder="Your full name"
+                  pattern="^(\w\w+)\s(\w+)$"
+                  id="cvv_name"
+                  name="cvv_name"
+                  require>
+               <label class="vertical">Card type*</label>
+               <select>
+                  <option value="dk">Dankort</option>
+                  <option value="visa">Visa</option>
+                  <option value="mc">Master</option>
+               </select>
+               <label class="vertical" for="cvv_nr">Credit Card number*</label>
+               <input
+                  type="text"
+                  placeholder="Your credit card number"
+                  maxlength="16"
+                  pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"
+                  id="cvv_nr"
+                  name="cvv_nr"
+                  require>
+               <div id="expire">
+                  <label class="vertical" for="cvv_month">Expiry date*</label>
+                  <input
+                     type="number"
+                     maxlength="2"
+                     placeholder="MM"
+                     pattern="[0-9]"
+                     id="cvv_month"
+                     name="cvv_month"
+                     max="12"
+                     require>
+                  <input
+                     type="number"
+                     placeholder="YY"
+                     pattern="[0-9]"
+                     maxlength="2"
+                     id="cvv_year"
+                     name="cvv_year"
+                     min="19"
+                     require>
+               </div>
+               <label class="vertical" for="cvv_ccv">CCV*</label>
+               <input
+                  type="text"
+                  pattern="([0-9]{3})"
+                  maxlength="3"
+                  id="cvv_ccv"
+                  name="cvv_ccv"
+                  require>
+               <div class="btn">
+                  <a href="#" onClick='alert("Your application was send. \n Thank you.")'class="next_btn">Finish</a>
+               </div>
+            </form>
+         </div>
+      </main>
+   </body>
+   </body>
+</html>
