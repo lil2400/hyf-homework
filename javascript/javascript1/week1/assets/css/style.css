@@ -1,0 +1,53 @@
+body,
+.container, .txt {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: monospace;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.wrap input {
+	width: 70px;
+	margin-bottom: 10px;
+}
+
+.wrap label {
+	text-align: right;
+	display: flex;
+}
+
+legend {
+	font-weight: bold;
+	color: red;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.wrap {
+	width: auto;
+}
+
+.txt {
+	margin-top: 50px;
+	width: 100%;
+	height: auto;
+	background: #E0E0E0;
+	padding: 0;
+	border: 0px;
+}
+
+.wrap p {
+	font-weight: bold;
+}

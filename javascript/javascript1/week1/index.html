@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+      <title>Bunch of calculators</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="wrap">
+            <form>
+               <fieldset>
+                  <legend>Age-ify:</legend>
+                  <p>A future age calculator</p>
+                  <label for="birth_year">Birth year</label>
+                  <input id="birth_year" type="number">
+                  <label for="future_year">Future year</label>
+                  <input id="future_year" type="number">
+                  <input id="sub_age" value="Check" type="submit">
+               </fieldset>
+            </form>
+         </div>
+         <div class="wrap">
+            <form>
+               <fieldset>
+                  <legend>Goodboy-Oldboy:</legend>
+                  <p>A dog age calculator</p>
+                  <label for="dog_birth_year">Birth year</label>
+                  <input id="dog_birth_year" type="number">
+                  <label for="dog_future_year">Future year</label>
+                  <input id="dog_future_year" type="number">
+                  <label for="show_dog_year">Show in Dog years</label>
+                  <input id="show_dog_year" type="checkbox">
+                  <input id="sub_dog" type="submit" value="Check">
+               </fieldset>
+            </form>
+         </div>
+         <div class="wrap">
+            <form>
+               <fieldset>
+                  <legend>Housey pricey:</legend>
+                  <p>House price calculator</p>
+                  <label for="hus_price_perm2">Price per m²</label>
+                  <input id="hus_price_perm2" type="number">
+                  <label for="hus_width">Width in meters</label>
+                  <input id="hus_width" type="number">
+                  <label for="hus_length">Length in meters</label>
+                  <input id="hus_length" type="number">
+                  <label for="hus_garden">Garden m²</label>
+                  <input id="hus_garden" type="number">
+                  <input id="sub_hus" type="submit" value="Check">
+               </fieldset>
+            </form>
+         </div>
+         <div class="wrap">
+            <form">
+            <fieldset>
+               <legend>Ez Namey:</legend>
+               <p>Generate bussiness name</p>
+               <input id="sub_name" type="submit" value="Generate">
+            </fieldset>
+            </form>
+         </div>
+      </div>
+      <div class="console">
+         <textarea rows="17" class="txt" id="console_" readonly></textarea>
+      </div>
+      <script src="./assets/js/handlers.js"></script>
+      <script src="./assets/js/main.js"></script>
+   </body>
+</html>
