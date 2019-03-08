@@ -12,17 +12,14 @@ button1.addEventListener('click', function() {
 });
 document.getElementById("sub_dog").addEventListener("click", function(event){
     event.preventDefault();
-   handleFireButton();
    dog_life();
 });
 
 document.getElementById("sub_hus").addEventListener("click", function(event){
     event.preventDefault();
-   handleFireButton();
    house_price();
 });
 document.getElementById("sub_name").addEventListener("click", function(event){
     event.preventDefault();
-   handleFireButton();
    bus_name();
 });
