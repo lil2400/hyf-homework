@@ -6,7 +6,9 @@ Homework for HYF class 09
 
 
 //Handlers
-document.getElementById('sub_age').addEventListener('click', function(e) {
+document.getElementById("sub_age").addEventListener("click", function(event){
+    event.preventDefault();
+   handleFireButton();
     future_year();
 });
 document.getElementById('sub_dog').addEventListener('click', function(e) {
