@@ -8,6 +8,7 @@ var button1 = document.querySelector('#sub_age');
 
 //Handlers
 button1.addEventListener('click', function() {
+        event.preventDefault();
     future_year();
 });
 document.getElementById("sub_dog").addEventListener("click", function(event){
