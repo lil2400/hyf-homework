@@ -4,12 +4,11 @@ Homework for HYF class 09
 --Calculations
 */
 
-var button1 = document.querySelector('#sub_age');
 
 //Handlers
-button1.addEventListener('click', function() {
-        event.preventDefault();
-    future_year();
+document.getElementById("sub_age").addEventListener("click", function(event){
+    event.preventDefault();
+   future_year();
 });
 document.getElementById("sub_dog").addEventListener("click", function(event){
     event.preventDefault();
