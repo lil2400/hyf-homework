@@ -21,7 +21,7 @@ const seriesDurations = [
 const lifeSpan = 8760 * 80; //convert years to hours
 
 seriesDurations.forEach(function(element) {
-    var timeSpend = element.days * 24 + element.days //converting days series to hours
+    var timeSpend = element.days * 24 + element.hours //converting days series to hours
     var totalSpend = (timeSpend / lifeSpan) * 8760
     console.log(element.title + " took " + totalSpend.toFixed(2) + "% of my life")
 })
