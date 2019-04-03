@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#library {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#spirit_generator {
+	text-align: center;
+	margin: 30px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.books {
+	border-radius: 5px;
+	margin: 5px;
+	width: 200px;
+	background-color: #ECECEC;
+	padding: 5px;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+p {
+	font-size: 13px;
+}
+
+img {
+	width: 200px;
+	height: 300px;
+}
+
+.auth {
+	font-weight: bold;
+}
