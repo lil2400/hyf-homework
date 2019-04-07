@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fast-Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!--   <link rel="stylesheet" type="text/css" media="screen" href="main.css">-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
+
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+    }
+    body{ font-family: 'Roboto', sans-serif;}
+    .name {
+        font-family: 'Pacifico', cursive;
+        color: #575757;
+        font-size: 90px;
+        text-align: center;
+        text-shadow: 2px 2px 5px black;
+
+    }
+    input {
+        padding: 15px;
+        font-size: 20px;
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 3px 6px 12px 10px rgba(0,0,0,0.22);
+    }
+    
+    .btn {
+        background-color: #3ece8e;
+        width: 200px;
+        height: 70px;
+        font-size: 23px;
+        font-weight: bold;
+        color: white;
+        border-radius: 10px;
+        cursor:pointer;
+        outline:none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        text-align: center;
+        line-height: 65px;
+
+        
+        
+
+
+    }
+        .btn:hover {
+        position:relative;
+        bottom:2px;
+    }
+   
+    .s{
+        float: left;
+        width: 50%;
+        text-align: center;
+        margin-top: 10%;
+    }
+    .l{
+        width: 49%;
+        float: right;
+        margin-top: 10%;
+        text-align: center;
+        border-left: 2px solid black;
+    
+        
+    }
+    p {
+        font-weight: bold;
+    }
+
+    canvas {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    width: 50%
+}
+    
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="name">
+            Fastest presser
+        </h1>
+        <div class="head">
+            <input id="interval" placeholder="Set seconds" type="number">
+            <a class="btn" id="play">Start game!</a>
+        </div>
+        <div class="s">
+                <canvas id="s"></canvas>
+
+            <h1 class="animated infinite heartBeat">Press S</h1>
+            <p id="s-counter"><p>
+
+            </div>
+        <div class="l">
+            <canvas id="l"></canvas>
+
+            <h1 class="animated infinite heartBeat">Press L</h1>
+            <p id=l-counter></p>
+            
+        </div>
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.14/dist/index.min.js"></script>
+
+    <script src="game.js"></script>
+
+
+</body>
+</html>

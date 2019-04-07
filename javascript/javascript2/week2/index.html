@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
+   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i" rel="stylesheet">
+   <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+   <style>
+   body {
+    font-family: 'IBM Plex Mono', monospace;
+
+   }
+   .wrap{
+       display: flex;
+       flex-direction: center;
+   }
+
+   </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <fieldset>
+            <legend>Sleep Function:</legend>
+            <p>Interval is set to 5sec.</p>
+            <button id="delay_btn">CLICK ME!</button>
+            <h1 id="log"></h1>
+        </fieldset>
+
+       <fieldset>
+           <legend>Planet Function</legend>
+           <pre><code class="javascript">
+let earth = function() { console.log('Earth'); }
+let saturn = function() { console.log ('Saturn'); }
+       
+function planets (planetLogFunction) {
+    planetLogFunction()
+}
+              
+planets(earth) //calling the function
+           </code></pre>
+
+
+        </fieldset>
+
+        
+       <fieldset>
+            <legend>Log location</legend>
+            <button id="location_btn">LOCATE ME!</button>
+            <div id='mapholder'>
+
+            </div>
+
+         </fieldset>
+
+         <fieldset>
+                <legend>Fast Game</legend>
+                <button id="game">PLAY ME!</button>
+                <div id='mapholder'>
+    
+                </div>
+    
+        </fieldset>
+
+
+    </div>
+    <script src="main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
