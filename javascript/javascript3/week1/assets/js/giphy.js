@@ -3,7 +3,7 @@ const button = document.getElementsByTagName('button')
 
 
 function searchGif(keyword) {
-	fetch(encodeURI(`http://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=N3r0KF4bhM5tbBUoASgTcKPMHfCngjZI&limit=5`))
+	fetch(encodeURI(`https://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=N3r0KF4bhM5tbBUoASgTcKPMHfCngjZI&limit=5`))
 		.then(response => response.json())
 		.then((json) => {
 			for (let i = 0; i < 5; i++) {
