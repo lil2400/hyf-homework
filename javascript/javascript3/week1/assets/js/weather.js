@@ -65,7 +65,7 @@ function cityWeather (name) {
 	fetch(encodeURI(`https://api.openweathermap.org/data/2.5/weather?q=${name},dk&units=metric&&APPID=81f3ef7d95d1a55e0f0754132ccc7984`)) //using encodeURI for danish letters
 		.then(response => response.json())
 		.then((weatherMap) => {
-			img.src = `http://openweathermap.org/img/w/${weatherMap.weather[0].icon}.png`;
+			img.src = `https://openweathermap.org/img/w/${weatherMap.weather[0].icon}.png`;
 			c.innerHTML = `${Math.round(weatherMap.main.temp)} °C`;
 			city.innerHTML = name;
 			dt.innerHTML = todayDate();
