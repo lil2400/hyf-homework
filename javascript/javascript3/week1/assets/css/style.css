@@ -1,0 +1,64 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+header h1 {
+	font-size: 80px;
+}
+
+header {
+	text-align: center;
+}
+
+input {
+	margin-top: 20px;
+	border-radius: 10px;
+	font-size: 30px;
+	padding: 10px;
+}
+
+.loc img {
+	width: 30px;
+	height: 30px;
+	margin-bottom: -10px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.loc p {
+	font-weight: bold;
+	margin-left: 5px;
+	display: inline;
+	cursor: pointer;
+}
+
+.loc {
+	margin-top: 10px;
+}
+
+.weather {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#weather_img {
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#celcius {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.weather {
+	display: none;
+}

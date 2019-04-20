@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <title>Weather App</title>
+   </head>
+   <body onload="init();">
+      <div class="container">
+      <header>
+         <h1>Weather App</h1>
+         <input
+            onFocus="geolocate()"
+            autocomplete="off"
+            id="search"      
+            type="text" 
+            placeholder="Enter City Name">
+         <div class="loc">
+            <img src="./assets/img/location.png" alt="location">
+            <p>Get current location</p>
+        </div>
+      </header>
+        <div class="weather">
+            <h4 id="date"></h4>
+            <h1 id="city"></h1>
+            <img id="weather_img" src="" alt="weather_icon">
+            <h1 id="celcius"></h1>
+        </div>
+    </div>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpl7gODF7kBP4eU9SWxB-Szw3yb5VGknE&libraries=places&region=dk"></script>
+      <script src="./assets/js/weather.js"></script>
+    </body>
+</html>
